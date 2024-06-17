@@ -20,6 +20,10 @@
             gap: 35px;
         }
 
+        .swiper.mySwiper {
+            height: 755px;
+        }
+
         .swiper-slide {
             background-position: center;
             background-size: cover;
@@ -37,6 +41,7 @@
             height: 400px;
             overflow: hidden;
             display: flex;
+            transition: .1s all;
             justify-content: center;
             align-items: center;
         }
@@ -51,7 +56,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            transition: all .5s;
+            /* transition: all .5s; */
         }
 
         .swiper-slide:hover img {
@@ -74,6 +79,35 @@
 
         .swiper-slide:hover .swiper-slide--hovertext {
             opacity: 100%;
+        }
+
+        @media(max-width: 1100px) {
+
+            .swiper.mySwiper {
+                height: 600px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .swiper.mySwiper {
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .swiper.mySwiper {
+                height: auto;
+            }
+
+            .footer {
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .footer {
+                margin-top: -30px;
+            }
         }
     </style>
 </head>
@@ -247,7 +281,9 @@
                             <span>Используемый материал</span>
                             <span>Хлопок</span>
                         </div>
-                        <p class="main__card-info--info---text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <p class="main__card-info--info---text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s</p>
                         <!-- <div class="main__card-info--info---size">
                             <span>Выбор размера</span>
                             <ul>
@@ -275,7 +311,7 @@
             </div> -->
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -284,7 +320,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -293,7 +329,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -302,7 +338,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -311,7 +347,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -320,7 +356,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -329,7 +365,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -338,7 +374,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide-img-c">
+                    <div class="swiper-slide-img-c" onclick="document.location='second_page.html'">
                         <img src="images/slider.png" />
                         <a href="second_page.html" class="swiper-slide--hovertext">Перейти в каталог</a>
                     </div>
@@ -656,5 +692,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+</body>
+
 
 </html>
